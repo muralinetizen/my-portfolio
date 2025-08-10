@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murali D - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #1f1c2c, #928dab);
+    color: white;
+}
+
+header {
+    padding: 15px 50px;
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff9800;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+}
+
+.hero-content h1 span {
+    color: #ff9800;
+}
+
+.hero-content p {
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+.btn {
+    background: #ff9800;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e68900;
+}
+
+/* Blogs Section */
+.blogs {
+    padding: 80px 50px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.blogs h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #ff9800;
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.blog-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.blog-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.blog-card p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.blog-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.4);
+}
+
+    </style>
+    <header>
+        <nav>
+            <div class="logo">Murali D</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span>Murali D</span></h1>
+            <p>Aspiring Developer | Creative Thinker | Problem Solver</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <!-- Blogs Section -->
+    <section id="blogs" class="blogs">
+        <h2>Latest Blogs</h2>
+        <div class="blog-container">
+            <div class="blog-card">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c" alt="Tech Blog">
+                <h3>Mastering JavaScript in 30 Days</h3>
+                <p>Learn the essential concepts, tips, and tricks to level up your JavaScript skills in just one month.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="blog-card">
+                <img src="https://images.unsplash.com/photo-1526378722461-58e90d3747a0" alt="AI Blog">
+                <h3>The Future of AI in 2025</h3>
+                <p>Explore how AI will revolutionize industries, create opportunities, and reshape our daily lives.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="blog-card">
+                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" alt="Career Blog">
+                <h3>Building a Portfolio That Stands Out</h3>
+                <p>Tips and strategies for creating a personal portfolio that impresses employers and clients.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Murali D. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
